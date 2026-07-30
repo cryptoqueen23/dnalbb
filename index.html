@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+
+<script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -35,6 +37,15 @@
     </button>
   </div>
 </header>
+
+<div class="market-ticker" aria-label="Live cryptocurrency market prices">
+  <coingecko-coin-price-marquee-widget
+    coin-ids="bitcoin,ethereum,solana,ripple,chainlink"
+    currency="usd"
+    locale="en">
+  </coingecko-coin-price-marquee-widget>
+</div>
+
 <main id="main-content" tabindex="-1">
 
 <section class="hero">
